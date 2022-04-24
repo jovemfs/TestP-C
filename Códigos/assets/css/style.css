@@ -17,8 +17,8 @@
   --lig: 62%;
   --second-hue: 2;
   --first-color: hsl(2, 0%, 16%); /* hsl(var(--first-hue), var(--sat), var(--lig)) */
-  --first-color-alt: hsl(0, 100%, 65%); /* hsl(var(--first-hue), var(--sat), 61%) */
-  --title-color: hsl(24, 94%, 62%); /* hsl(var(--second-hue), 15%, 95%) */
+  --first-color-alt: hsl(24, 100%, 65%); /* hsl(var(--first-hue), var(--sat), 61%) */
+  --title-color: hsl(0, 0%, 85%); /* hsl(var(--second-hue), 15%, 95%) */
   --text-color: hsl(0, 0%, 87%); /* hsl(var(--second-hue), 8%, 75%) */
   --text-color-light: hsl(24, 94%, 62%); /* hsl(var(--second-hue), 4%, 55%) */
   --body-color: rgb(20, 20, 20); /* hsl(var(--second-hue), 48%, 8%) */
@@ -181,7 +181,7 @@ img {
 .nav__menu{
   position: fixed;
   bottom: 1rem;
-  background-color: hsla(var(--second-hue), 32%, 16%, .8);
+  background-color: rgb(26, 26, 26); /* hsla(var(--second-hue), 32%, 16%, .8) */
   width: 90%;
   border-radius: 4rem;
   padding: 1rem 2.25rem;

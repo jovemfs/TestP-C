@@ -30,7 +30,8 @@ modalClose.forEach((mc) =>{
 })
 
 
-/*=============== MIXITUP FILTER PORTFOLIO ===============*/
+/* filtro portfolio */
+
 
 
 /* Link active work */ 

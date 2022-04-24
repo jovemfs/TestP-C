@@ -12,7 +12,7 @@
         Cinza: hsl(2, 0%, 16%)
         Laranja: hsl(24, 94%, 62%)
   */
-  --first-hue: 2;
+  --first-hue: 25;
   --sat: 63%;
   --lig: 62%;
   --second-hue: 2;
@@ -181,7 +181,7 @@ img {
 .nav__menu{
   position: fixed;
   bottom: 1rem;
-  background-color: rgb(27, 27, 27); /* hsla(var(--second-hue), 32%, 16%, .8) */
+  background-color: hsla(var(--first-hue), 32%, 16%, .8); /* rgb(27, 27, 27) || hsla(var(--second-hue), 32%, 16%, .8) */
   width: 90%;
   border-radius: 4rem;
   padding: 1rem 2.25rem;
@@ -212,9 +212,12 @@ img {
 }
 
 /* Change background header */
+.scroll-header{
+  box-shadow: 0 4px 4px hsla(0, 0%, 4%, .3);
+}
 
 
-/*=============== INICIO ===============*/
+/* ------------ INICIO ------------ */
 .home__container{
   position: relative;
   row-gap: 4.5rem;
@@ -323,16 +326,96 @@ img {
   transform: rotate(90deg) translate(16px, 3px);
 }
 
-/*=============== BOTOES ===============*/
+.home__scroll{
+  color: var(--first-color);
+  right: -1.5rem;
+  bottom: 4rem;
+  display: grid;
+  row-gap: 2.25rem;
+  justify-items: center;
+}
+
+.home__scroll-icon{
+  font-size: 1.25rem;
+}
+
+.home__scroll-name{
+  font-size: var(--small-font-size);
+  transform: rotate(-90deg);
+}
+
+/* ------------ BOTOES ------------ */
+.button{
+  display: inline-block;
+  background-color: var(--first-color);
+  color: var(--body-color);
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  font-weight: var(--font-medium);
+  transition: .4s;
+}
+
+.button:hover{
+  background-color: var(--first-color-alt);
+  color: var(--body-color);
+}
+
+.button--ghost{
+  background-color: transparent;
+  border: 2px solid var(--first-color);
+  color: var(--first-color);
+}
+
+/*------------ SOBRE ------------*/
+.about__container{
+  row-gap: 2.5rem;
+}
+
+.about__img{
+  width: 220px;
+  border-radius: 1.5rem;
+  justify-self: center;
+}
+
+.about__data{
+  text-align: center;
+}
+
+.about__info{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .5rem;
+  margin-bottom: 2rem;
+}
+
+.about__box{
+  background-color: var(--container-color);
+  border-radius: .75rem;
+  padding: .75rem .5rem;
+}
+
+.about__icon{
+  font-size: 1.5rem;
+  columns: var(--first-color);
+  margin-bottom: .5rem;
+}
+
+.about__title{
+  font-size: var(--small-font-size);
+}
+
+.about__subtitle{
+  font-size: var(--tiny-font-size);
+}
+
+.about__description{
+  margin-bottom: 2rem;
+}
+
+/*------------ SKILLS ------------*/
 
 
-/*=============== SOBRE ===============*/
-
-
-/*=============== SKILLS ===============*/
-
-
-/*=============== SERVICOS ===============*/
+/*------------ SERVICOS ------------*/
 
 
 /* Services modal */
@@ -341,28 +424,28 @@ img {
 /*Active modal*/
 
 
-/*=============== TRAMPO ===============*/
+/*------------ TRAMPO ------------*/
 
 
 /* Active item work*/
 
 
-/*=============== REVIEW ===============*/
+/*------------ REVIEW ------------*/
 
 
 /* Swiper class */
 
 
-/*=============== CONTATO ===============*/
+/*------------ CONTATO ------------*/
 
 
-/*=============== RODAPE ===============*/
+/*------------ RODAPE ------------*/
 
 
-/*=============== SCROLL ===============*/
+/*------------ SCROLL ------------*/
 
 
-/*=============== BREAKPOINTS ===============*/
+/*------------ BREAKPOINTS ------------*/
 /* For small devices */
 
 

@@ -1,12 +1,11 @@
-/* background header */
+// background header
 function scrollHeader(){
     const header = document.getElementById('header')
-    // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
     if(this.scrollY >= 50) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
 
-/* modal */
+// modal 
 const modalViews = document.querySelectorAll('.services__modal'),
         modalBtns = document.querySelectorAll('.services__button'),
         modalClose = document.querySelectorAll('.services__modal-close')
@@ -30,7 +29,7 @@ modalClose.forEach((mc) =>{
 })
 
 
-/* filtro portfolio */
+// filtro portfolio 
 let mixerPortfolio = mixitup('.work__container', {
     selectors: {
         target: '.work__card'
@@ -41,7 +40,7 @@ let mixerPortfolio = mixitup('.work__container', {
 });
 
 
-/* Link active work */ 
+// Link active work 
 const linkWork = document.querySelectorAll('.work__item')
 
 function activeWork(){
@@ -52,7 +51,7 @@ function activeWork(){
 linkWork.forEach(l=> l.addEventListener('click', activeWork))
 
 
-/* scroll active */
+// scroll active
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive(){
@@ -72,7 +71,7 @@ function scrollActive(){
 }
 window.addEventListener('scroll', scrollActive)
 
-/* tema claro */
+// tema claro
 const themeButton = document.getElementById('theme-button')
 const lightTheme = 'light-theme'
 const iconTheme = 'bx-sun'
@@ -95,5 +94,15 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-/*=============== SCROLL REVEAL ANIMATION ===============*/
+// scroll reveal
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+    // reset: true
+})
 
+sr.reveal('.home__data')
+sr.reveal('.home__handle', {delay: 700})
+sr.reveal('.home__social, .home__scroll', {delay: 900, origin: 'bottom'})

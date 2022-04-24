@@ -1,3 +1,4 @@
-<h2> Portfolio </h2>
+<h3> Teste de portfolio </h3>
 
-Primeiro teste de portfólio utilizando HTML, CSS e JS. Esse site contém informações sobre mim e minha carreira como designer gráfico e tem como intuito o estudo de responsividade em CSS e testes de botões e containers. Não é o site definitivo sobre o portfólio.
+<img src="https://user-images.githubusercontent.com/59957939/165001529-3fc869e6-1068-4736-94dc-22a74c48758d.png">
+

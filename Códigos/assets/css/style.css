@@ -636,11 +636,15 @@ img {
   color: var(--body-color);
 }
 
-/*------------ REVIEW ------------*/
-
-
 /* Swiper class */
+/* .swiper-pagination-bullet{
+  background-color: var(--text-color-light);
+}
 
+.swiper-pagination-bullet-active{
+  background-color: var(--first-color);
+}
+ */
 
 /*------------ CONTATO ------------*/
 

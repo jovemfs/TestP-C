@@ -15,7 +15,7 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- swiper css -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
     <!-- css -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -123,7 +123,7 @@
                 </div>
                 <!-- redes sociais fim -->
 
-                <a href="#sobre" class="home__scroll">
+                <a href="#about" class="home__scroll">
                     <!-- <i class='bx bx-mouse home__scroll-icon' ></i> -->
                     <i class='bx bx-down-arrow home__scroll-icon' ></i>
                     <!-- <i class='bx bx-mouse home__scroll-icon' ></i> -->
@@ -479,17 +479,17 @@
             <h2 class="section__title">Últimos projetos</h2>
 
             <div class="work__filters">
-                <span class="work__item active-work">Embalagem</span>
-                <span class="work__item">Identidade visual</span>
-                <span class="work__item">Design de poster</span>
-                <span class="work__item">Cover art album</span>
+                <span class="work__item active-work" data-filter='all'>Todos</span>
+                <span class="work__item" data-filter='.vi'>Identidade visual</span>
+                <span class="work__item" data-filter='.pd'>Design de poster</span>
+                <span class="work__item" data-filter='.ca'>Cover art album</span>
             </div>
 
             <div class="work__container container grid">
 
 
                 <!-- leall t1 -->
-                <div class="work__card">
+                <div class="work__card mix vi">
                     <img src="assets/img/t1.png" class="work__img">
 
                     <h3 class="work__title">Amostra de Demonike</h3>
@@ -501,7 +501,7 @@
                 <!-- -->
 
                 <!-- NEC t2 -->
-                <div class="work__card">
+                <div class="work__card mix vi">
                     <img src="assets/img/t2.png" class="work__img">
 
                     <h3 class="work__title">Nascido e Criado</h3>
@@ -513,7 +513,7 @@
                 <!-- -->
 
                 <!-- tue t3 -->
-                <div class="work__card">
+                <div class="work__card mix pd">
                     <img src="assets/img/t3.png" class="work__img">
 
                     <h3 class="work__title">Music design</h3>
@@ -525,7 +525,7 @@
                 <!-- -->
 
                 <!-- japa t4 -->
-                <div class="work__card">
+                <div class="work__card mix ca">
                     <img src="assets/img/t4.png" class="work__img">
 
                     <h3 class="work__title">Cover art</h3>
@@ -537,7 +537,7 @@
                 <!-- -->
 
                 <!-- braddock t5 -->
-                <div class="work__card">
+                <div class="work__card mix vi">
                     <img src="assets/img/t5.png" class="work__img">
 
                     <h3 class="work__title">Design de ingressos</h3>
@@ -553,14 +553,91 @@
         <!-- trampo -->
 
         <!-- reviews -->
-        <section class="testimonial section">
+       <!--  <section class="testimonial section">
 
-        </section>
+        </section> -->
         <!-- reviews -->
 
         <!-- contato -->
         <section class="contact section" id="contato">
+            <span class="section__subtitle">converse comigo</span>
+            <h2 class="section__title">Contato</h2>
 
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h3 class="contact__title">Para mensagens...</h3>
+
+                    <div class="contact__info">
+
+                        <!-- email -->
+                        <div class="contact__card">
+                            <i class='bx bxl-gmail contact__button-icon' ></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">uxmoura@gmail.com</span>
+
+                            <a href="mailto:uxmoura@gmail.com" target="_blank" class="contact__button">
+                                Pelo email <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                            </a>
+                        </div>
+                        <!--   -->
+
+                        <!-- Discord -->
+                        <div class="contact__card">
+                            <i class='bx bxl-discord-alt contact__button-icon' ></i>
+                            <h3 class="contact__card-title">Discord</h3>
+                            <span class="contact__card-data">russ#4036</span>
+
+                            <a href="#" target="_blank" class="contact__button">
+                                Pelo Discord <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                            </a>
+                        </div>
+                        <!--   -->
+
+                        <!-- wpp -->
+                        <div class="contact__card">
+                            <i class='bx bxl-whatsapp contact__button-icon' ></i>
+                            <h3 class="contact__card-title">WhatsApp</h3>
+                            <span class="contact__card-data">+55 11 00000-0000</span>
+
+                            <a href="https://api.whatsapp.com/send?phone=55119000000000&text=Opa" target="_blank" class="contact__button">
+                                Pelo WhatsApp <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                            </a>
+                        </div>
+                        <!--   -->
+
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <h3 class="contact__title">Orçamentos e dúvidas</h3>
+
+                    <form action="" class="contact__form">
+
+                        <!-- nome -->
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Nome</label>
+                            <input type="text" placeholder="Como eu deveria chama-lo?" class="contact__form-input">
+                        </div>
+                        <!--   -->
+
+                        <!-- email -->
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Email</label>
+                            <input type="email" placeholder="Insira o email para o retorno de contato" class="contact__form-input">
+                        </div>
+                        <!--   -->
+
+                        <!-- assunto -->
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Assunto</label>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Sobre o que deseja tratar?" class="contact__form-input"></textarea>
+                        </div>
+                        <!--   -->
+
+                        <button class="button">Enviar mensagem</button>
+                    </form>
+                </div>
+            </div>
         </section>
         <!-- contato -->
 
@@ -575,7 +652,7 @@
     <script src=""></script>
 
     <!-- swiper javascript -->
-    <script src=""></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!-- mixitup -->
     <script src="assets/js/mixitup.min.js"></script>
